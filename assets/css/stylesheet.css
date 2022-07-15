@@ -74,3 +74,23 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+
+  text{
+    border: transparent;
+    width: 75%;
+    overflow:hidden;
+    position: center;
+    right: 0;
+    left: 0;
+    background-color: red
+  }
+
+  p.col.time-block.hour {
+    text-align:center;
+    display:inline;
+    justify-content:first baseline;
+    align-items:center;
+    border-style:dashed;
+    user-select:none;
+    font-weight:lighter
+  }
