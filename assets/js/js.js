@@ -19,4 +19,11 @@ var businessHoursMil = [
 var milHour = moment().format("HH")
 
 //Save Button
+$('.saveBtn').on('click', function(event) {
+    event.preventDefault();
 
+    let entryId = parseInt($(this).closest('.time-block').attr('id'));
+    let newEntry = $.trim($(this).parent().find('textarea').val());
+    workDay[entryId].event = newEntry;
+    localStorage.setItem(entryId, newEntry);
+}
