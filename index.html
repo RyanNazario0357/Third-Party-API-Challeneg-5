@@ -1,157 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Start Head-->
-    <head>
+  <!--Start Head-->
+
+  <head>
     <!--Meta Section-->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device width, initial-scale=1.0" />
-        <meta http-equivalent="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0" />
+    <meta http-equivalent="X-UA-Compatible" content="ie=edge" />
     <!--End Meta Section-->
 
     <!--Links to other folders-->
-        <link rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-        
-        <link rel="stylesheet" 
-        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous" />
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" 
-        rel="stylesheet" />
-        
-        <link rel="stylesheet" 
-        href="./assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
     <!--End Link Section-->
-    
+
     <!--Title-->
-        <title>Work Day Schedule</title>
-    </head>
-<!--End Head-->
-    
-    <body>    
+    <title>Work Day Schedule</title>
+  </head>
+  <!--End Head-->
+
+  <body>
     <!---Header-->
-        <header class="jumbotron">
-            <h1 class="display-3">Work Day Scheduler</h1>
-            <p class="lead">A simple calendar app for scheduling your work day</p>
-            <p id="currentDay" class="lead"></p>
-        </header>
-        <div class="time-container"></div>
-        <!--Time Slots Begin-->
-                        <!--9AM Section-->
-                <div class="row">
-                    <p class="col time-block hour">9AM</p>
-                        <textarea
-                            id="text-9AM"
-                            class="col-10 from-control decription 09">
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="time-container"></div>
+    <!--Time Slots Begin-->
+    <!--9AM Section-->
+    <div class="row">
+      <p class="col time-block hour">9AM</p>
+      <textarea id="text-9AM" class="col-10 from-control decription 09">
                         </textarea>
-                        <button id="9AM" class="col saveBtn fas fa-save btn">
-                        </button>
-                </div>
-            </hr>
-                        <!--10AM Section-->
-                <div class="row">
-                    <p class="col time-block hour">10AM
-                    </p>
-                    <textarea id="text-10AM" class="col-10 form-control description 10">
+      <button id="9AM" class="col saveBtn fas fa-save btn">
+      </button>
+    </div>
+    </hr>
+    <!--10AM Section-->
+    <div class="row">
+      <p class="col time-block hour">10AM
+      </p>
+      <textarea id="text-10AM" class="col-10 form-control description 10">
                     </textarea>
-                    <button id="10AM" class="col saveBtn fas fa-save btn"></button>
-                </div>
-            </hr>
-                        <!--11Am Section-->
-                <div class="row">
-                    <p class="col time-block hour">11AM</p>
-                        <textarea
-                            id="text-11AM"
-                            class="col-10 from-control decription 11">
+      <button id="10AM" class="col saveBtn fas fa-save btn"></button>
+    </div>
+    </hr>
+    <!--11Am Section-->
+    <div class="row">
+      <p class="col time-block hour">11AM</p>
+      <textarea id="text-11AM" class="col-10 from-control decription 11">
                         </textarea>
-                        <button id="11AM" class="col saveBtn fas fa-save btn">
-                        </button>
-                </div>
-            </hr>
-                        <!--12PM Section-->
-                <div class="row">
-                    <p class="col time-block hour">12PM</p>
-                        <textarea
-                            id="text-12PM"
-                            class="col-10 from-control decription 12">
+      <button id="11AM" class="col saveBtn fas fa-save btn">
+      </button>
+    </div>
+    </hr>
+    <!--12PM Section-->
+    <div class="row">
+      <p class="col time-block hour">12PM</p>
+      <textarea id="text-12PM" class="col-10 from-control decription 12">
                         </textarea>
-                        <button id="12AM" class="col saveBtn fas fa-save btn">
-                        </button>
-                </div>
-            </hr>
-                        <!--1PM Section-->
-                        <div class="row">
-                    <p class="col time-block hour">1PM</p>
-                        <textarea
-                            id="text-1PM"
-                            class="col-10 from-control decription 1">
+      <button id="12AM" class="col saveBtn fas fa-save btn">
+      </button>
+    </div>
+    </hr>
+    <!--1PM Section-->
+    <div class="row">
+      <p class="col time-block hour">1PM</p>
+      <textarea id="text-1PM" class="col-10 from-control decription 1">
                         </textarea>
-                        <button id="1PM" class="col saveBtn fas fa-save btn">
-                        </button>
-                </div>
-            </hr>
-                        <!--2PM Section-->
-                        <div class="row">
-                    <p class="col time-block hour">2PM</p>
-                        <textarea
-                            id="text-2PM"
-                            class="col-10 from-control decription 2">
+      <button id="1PM" class="col saveBtn fas fa-save btn">
+      </button>
+    </div>
+    </hr>
+    <!--2PM Section-->
+    <div class="row">
+      <p class="col time-block hour">2PM</p>
+      <textarea id="text-2PM" class="col-10 from-control decription 2">
                         </textarea>
-                        <button id="2PM" class="col saveBtn fas fa-save btn">
-                        </button>
-                </div>
-            </hr>
-                        <!--3PM Section-->
-                        <div class="row">
-                    <p class="col time-block hour">3PM</p>
-                        <textarea
-                            id="text-3PM"
-                            class="col-10 from-control decription 3">
+      <button id="2PM" class="col saveBtn fas fa-save btn">
+      </button>
+    </div>
+    </hr>
+    <!--3PM Section-->
+    <div class="row">
+      <p class="col time-block hour">3PM</p>
+      <textarea id="text-3PM" class="col-10 from-control decription 3">
                         </textarea>
-                        <button id="3PM" class="col saveBtn fas fa-save btn">
-                        </button>
-                </div>
-            </hr>
-                        <!--4PM Section-->
-                        <div class="row">
-                    <p class="col time-block hour">4PM</p>
-                        <textarea
-                            id="text-4PM"
-                            class="col-10 from-control decription 4">
+      <button id="3PM" class="col saveBtn fas fa-save btn">
+      </button>
+    </div>
+    </hr>
+    <!--4PM Section-->
+    <div class="row">
+      <p class="col time-block hour">4PM</p>
+      <textarea id="text-4PM" class="col-10 from-control decription 4">
                         </textarea>
-                        <button id="4PM" class="col saveBtn fas fa-save btn">
-                        </button>
-                </div>
-            </hr>
-                        <!--5PM Section-->
-                        <div class="row">
-                    <p class="col time-block hour">5PM</p>
-                        <textarea
-                            id="text-5PM"
-                            class="col-10 from-control decription 5">
+      <button id="4PM" class="col saveBtn fas fa-save btn">
+      </button>
+    </div>
+    </hr>
+    <!--5PM Section-->
+    <div class="row">
+      <p class="col time-block hour">5PM</p>
+      <textarea id="text-5PM" class="col-10 from-control decription 5">
                         </textarea>
-                        <button id="5PM" class="col saveBtn fas fa-save btn">
-                        </button>
-                </div>
-            </hr>
-                <h3 id="currentDay" class="lead"></h3>
-                <h3 id="currentTime" class="lead"></h3>
-            </div>        
+      <button id="5PM" class="col saveBtn fas fa-save btn">
+      </button>
+    </div>
+    </hr>
+    <h3 id="currentDay" class="lead"></h3>
+    <h3 id="currentTime" class="lead"></h3>
+    </div>
     <!--Time Slots End-->
 
     <!--Main Section Start-->
     <main>
-        <div class="container">
-            <!--Timeblock inserted here-->
-        </div>
-   </main>
-<!--Main Section End-->
+      <div class="container">
+        <!--Timeblock inserted here-->
+      </div>
+    </main>
+    <!--Main Section End-->
 
     <!--Script Section Start-->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="./assets/js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/js.js"></script>
     <!--Script Section End-->
-    </body>
+  </body>
+
 </html>
