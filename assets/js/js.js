@@ -18,6 +18,13 @@ var businessHoursMil = [
 ]
 var milHour = moment().format("HH")
 
+//Save Entry
+function loadEntry(key) {
+    let savedEntry = localStorage.getItem(key);
+    if (savedEntry) {
+        $('#col-text-' + key).text(savedEntry);
+    }
+}
 //Save Button
 $('.saveBtn').on('click', function(event) {
     event.preventDefault();
@@ -26,4 +33,4 @@ $('.saveBtn').on('click', function(event) {
     let newEntry = $.trim($(this).parent().find('textarea').val());
     workDay[entryId].event = newEntry;
     localStorage.setItem(entryId, newEntry);
-}
+});
