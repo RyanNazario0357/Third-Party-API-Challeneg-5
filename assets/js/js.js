@@ -27,6 +27,24 @@ for (var i = 0; i < businessHoursMil.length; i++) {
     }
 }
 
+//past hours
+for (var i = 0; i < businessHoursMil.length; i++) {
+    if (milHour > businessHoursMil[i]) {
+        var updateClass = $("." + businessHoursMil[i]);
+        updateClass.addCLass("present");
+        $("." + businessHoursMil[i]).append(updateClass)
+    }
+}
+
+//Coming hours
+for (var i = 0; i < businessHoursMil.length; i++) {
+    if (milHour < businessHoursMil[i]) {
+        var updateClass = $("." + businessHoursMil[i]);
+        updateClass.addCLass("present");
+        $("." + businessHoursMil[i]).append(updateClass)
+    }
+}
+
 //Save Entry
 function loadEntry(key) {
     let savedEntry = localStorage.getItem(key);
